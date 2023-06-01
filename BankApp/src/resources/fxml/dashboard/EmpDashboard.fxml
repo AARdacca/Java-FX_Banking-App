@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17"
+            fx:controller="codes.controller.DashboardController">
+    <children>
+        <Button layoutX="228.0" layoutY="229.0" mnemonicParsing="false" onAction="#btnTransactionAction"
+                prefHeight="86.0" prefWidth="169.0" text="Transaction">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Button>
+        <AnchorPane layoutY="5.0" prefHeight="400.0" prefWidth="201.0">
+            <children>
+                <AnchorPane layoutY="103.0" onMouseClicked="#paneHomeAction" prefHeight="65.0" prefWidth="203.0"
+                            style="-fx-background-color: skyblue;">
+                    <children>
+                        <Text layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER"
+                              wrappingWidth="203.3454474936243">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutY="180.0" prefHeight="65.0" prefWidth="203.0"
+                            style="-fx-background-color: lightgreen;">
+                    <children>
+                        <Text layoutX="-3.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview"
+                              textAlignment="CENTER" wrappingWidth="203.3454474936243">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutY="258.0" onMouseClicked="#paneTransactionAction" prefHeight="65.0" prefWidth="203.0"
+                            style="-fx-background-color: skyblue;">
+                    <children>
+                        <Text layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction"
+                              textAlignment="CENTER" wrappingWidth="203.3454474936243">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutY="335.0" onMouseClicked="#paneDetailsAction" prefHeight="65.0" prefWidth="203.0"
+                            style="-fx-background-color: skyblue;">
+                    <children>
+                        <Text layoutX="-3.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details"
+                              textAlignment="CENTER" wrappingWidth="203.3454474936243">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <Button layoutX="246.0" layoutY="117.0" mnemonicParsing="false" onAction="#btnAddAccAction" prefHeight="86.0"
+                prefWidth="312.0" text="Add Account">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Button>
+        <Button layoutX="422.0" layoutY="229.0" mnemonicParsing="false" onAction="#btnDetailsAction" prefHeight="86.0"
+                prefWidth="154.0" text="Details">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
