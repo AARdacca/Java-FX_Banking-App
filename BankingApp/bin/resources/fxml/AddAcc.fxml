@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17"
+            fx:controller="codes.controller.AddAccController">
+    <children>
+        <TextField fx:id="tfName" layoutX="94.0" layoutY="89.0" prefHeight="64.0" prefWidth="411.0"
+                   promptText="Enter Name">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <AnchorPane layoutY="526.0" prefHeight="77.0" prefWidth="600.0" style="-fx-background-color: skyblue;">
+            <children>
+                <Button layoutX="21.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnBackAction"
+                        prefHeight="40.0" prefWidth="113.0" text="Back">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btnSubmit" layoutX="432.0" layoutY="20.0" mnemonicParsing="false"
+                        onAction="#btnSubmitAction" prefHeight="40.0" prefWidth="144.0" text="Submit">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="tfBalance" layoutX="94.0" layoutY="258.0" prefHeight="64.0" prefWidth="411.0"
+                   promptText="Enter Balance">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <RadioButton fx:id="rdoSaving" layoutX="37.0" layoutY="34.0" mnemonicParsing="false"
+                     onMouseClicked="#accTypeAction" selected="true" text="Saving Account">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rdoCurrent" layoutX="213.0" layoutY="34.0" mnemonicParsing="false"
+                     onMouseClicked="#accTypeAction" text="Current Account">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rdoStudent" layoutX="398.0" layoutY="34.0" mnemonicParsing="false"
+                     onMouseClicked="#accTypeAction" text="Student Account">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </RadioButton>
+        <TextField fx:id="tfMulti" layoutX="94.0" layoutY="344.0" prefHeight="64.0" prefWidth="411.0"
+                   promptText="Enter Max Withdraw Limit">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="tfUniName" layoutX="94.0" layoutY="431.0" prefHeight="64.0" prefWidth="411.0"
+                   promptText="Enter University Name" visible="false">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="tfNid" layoutX="94.0" layoutY="173.0" prefHeight="64.0" prefWidth="411.0"
+                   promptText="Enter NID No.">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+.button {
+    -fx-focus-traversable: false;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#a4ce82, #76ac63);
+}
